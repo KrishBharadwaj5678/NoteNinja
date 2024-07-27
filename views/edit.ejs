@@ -15,10 +15,11 @@
     <div class="form-part">
         <form action="/edit" method="POST">
             <div class="inner-form">
-                <input type="text" class="title" name="oldtitle" readonly value="<%= filename%>">
+                <input type="text" class="title" placeholder="Previous title..." name="oldtitle" readonly value="<%= filename%>">
+                
                 <input type="text" class="title" placeholder="Enter new title..." name="newtitle" required>
 
-                <textarea class="description" readonly name="olddesc"><%= filedata%></textarea>
+                <textarea class="description" placeholder="Previous description..." readonly name="olddesc"><%= filedata%></textarea>
 
                 <textarea class="description" placeholder="Enter new description..." required name="newdesc"></textarea>
 
