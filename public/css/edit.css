@@ -23,9 +23,8 @@ input.submit{
     }
     
     input.submit{
-        width: 24vw;
-        height: 8.3vw;
-        font-size: 3.4vw;
+        width: 26vw;
+        height: 10vw;
+        font-size: 3.7vw;
     }
-
 }
