@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/show.css">
+    <link rel="stylesheet" href="/css/edit.css">
+    <title>Notes App</title>
+</head>
+<body>
+
+    <h2 class="notes-head"><a href="/">Back to Home Page</a></h2>
+
+    <div class="form-part">
+        <form action="/edit" method="POST">
+            <div class="inner-form">
+                <input type="text" class="title" name="oldtitle" readonly value="<%= filename%>">
+                <input type="text" class="title" placeholder="Enter new title..." name="newtitle" required>
+
+                <textarea class="description" readonly name="olddesc"><%= filedata%></textarea>
+
+                <textarea class="description" placeholder="Enter new description..." required name="newdesc"></textarea>
+
+                <input type="submit" value="Update Notes" class="submit">
+            </div>
+        </form>
+    </div>
+
+<script src="/js/script.js" defer></script>
+</body>
+</html>

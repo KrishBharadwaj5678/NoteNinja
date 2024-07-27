@@ -1,0 +1,237 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height:100vh;
+    background: #212121;
+    font-family: sans-serif;
+    color: white;
+    padding: 5vw 5vw 0vw 5vw;
+}
+
+h2.notes-head{
+    font-size: 2.4vw;
+}
+
+hr{
+    margin: 0.2vw 0vw 0vw 0vw;
+    opacity: 0.4;
+}
+
+div.form-part{
+    margin: 2vw 0vw 0vw 0vw;
+}
+
+div.inner-form{
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+
+input.title,textarea.description{
+    border:none;
+    outline:none;
+    background: #DEE891;
+    height: 3vw;
+    border-radius: 0.3vw;
+    padding: 0vw 1.2vw 0vw 1vw;
+    font-size: 1.2vw;
+}
+
+input.title::placeholder{
+    color: black
+}
+
+textarea.description{
+    height: 8vw;
+    resize: none;
+    padding: 1vw 1.2vw 0vw 1vw;
+    font-family: sans-serif;
+    line-height: 2vw;
+}
+
+textarea.description::placeholder{
+    color: black
+}
+
+input.submit{
+    width: 8vw;
+    height: 2.7vw;
+    cursor: pointer;
+    color: white;
+    background: #50B196;
+    outline: none;
+    border: none;
+    border-radius: 0.2vw;
+    font-size: 1.2vw;
+}
+
+/* Notes Part */
+
+div.notes-part{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2vw 0vw 0vw 0vw;
+    gap: 1.5vw;
+}
+
+div.box{
+    width: 16vw;
+    color: rgb(39, 36, 36);
+    padding: 1vw;
+    border-radius: 0.3vw;
+    background: #F2C97C;
+}
+
+h3.box-title{
+    font-size: 1.8vw;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #492BEF;
+}
+
+p{
+    margin: 0.9vw 0vw;
+}
+
+a.read-more{
+    text-decoration: none;
+    font-size: 1.58vw;
+    color:#007EF4;
+}
+
+div.btns{
+    display: flex;
+    gap: 1vw;
+}
+
+button.edit,button.delete{
+    width: 6vw;
+    height: 2.7vw;
+    font-size: 1.3vw;
+    color: white;
+    outline:none;
+    border: none;
+    border-radius: 0.3vw;
+    cursor: pointer;
+}
+
+button.edit{
+    background: #007657;
+}
+
+button.delete{
+    background: #A70000;
+}
+
+/* No Notes */
+
+p.no-notes{
+    font-size: 2.3vw;
+    margin: 2vw 0vw;
+}
+
+@media only screen and (min-width:300px) and (max-width:1200px){
+
+    body{
+        padding: 7vw 10vw 0vw 10vw;
+    }
+
+    h2.notes-head{
+        font-size: 6vw;
+    }
+    
+    hr{
+        margin: 1vw 0vw 0vw 0vw;
+    }
+    
+    div.form-part{
+        margin: 4vw 0vw 0vw 0vw;
+    }
+    
+    div.inner-form{
+        gap: 3vw;
+    }
+    
+    input.title,textarea.description{
+        height: 8vw;
+        border-radius: 0.4vw;
+        padding: 0vw 1.7vw 0vw 2vw;
+        font-size: 3.3vw;
+    }
+    
+    textarea.description{
+        height: 18vw;
+        padding: 2vw 1.2vw 0vw 2vw;
+        line-height: 4.4vw;
+    }
+     
+    input.submit{
+        width: 19vw;
+        height: 6.5vw;
+        border-radius: 0.4vw;
+        font-size: 2.9vw;
+    }
+
+    div.notes-part{
+        margin: 5vw 0vw 0vw 0vw;
+        gap: 2.3vw;
+    }
+
+    div.box{
+        width: 25vw;
+        padding: 1.8vw;
+        border-radius: 0.4vw;
+    }
+
+    h3.box-title{
+        font-size: 3.2vw;
+    }
+    
+    p{
+        margin: 1.2vw 0vw;
+    }
+
+    a.read-more{
+        font-size: 3.3vw;
+    }
+
+    div.btns{
+        gap: 2vw;
+    }
+
+    button.edit,button.delete{
+        width: 9.3vw;
+        height: 5.7vw;
+        font-size: 2.4vw;
+        border-radius: 0.4vw;
+    }
+
+    p.no-notes{
+        font-size: 4.8vw;
+        margin: 4vw 0vw;
+    }
+}
+
+@media only screen and (min-width:600px) and (max-width:1200px){
+    input.title,textarea.description{
+        font-size: 3.6vw;
+    }
+
+    p{
+        margin: 1.6vw 0vw;
+    }
+
+    input.submit{
+        width: 20vw;
+        height: 7.4vw;
+        border-radius: 0.6vw;
+        font-size: 3.3vw;
+    }
+
+}

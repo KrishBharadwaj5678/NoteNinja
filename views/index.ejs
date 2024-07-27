@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/index.css">
+    <title>Notes App</title>
+</head>
+<body>
+
+    <!-- Heading -->
+    <h2 class="notes-head">Welcome to Notes App</h2>
+    <hr>
+
+    <!-- Form Part -->
+    <div class="form-part">
+        <form action="/create" method="POST">
+            <div class="inner-form">
+                <input type="text" class="title" placeholder="Your title goes here..." name="title" required>
+                <textarea class="description" placeholder="Your description goes here..." required name="description"></textarea>
+                <input type="submit" value="Add Notes" class="submit">
+            </div>
+        </form>
+    </div>
+
+
+    <% if(files.length>=1){ %>
+
+    <div class="notes-part">
+        <% files.forEach((file)=>{ %>
+
+            <!-- Notes Part -->
+                <div class="box">
+                    <h3 class="box-title"><%= file %></h3>
+                    <p><a href="/read/<%= file%>" class="read-more">Read More</a></p>
+                    <div class="btns">
+                        <a href="/edit/<%= file%>"><button class="edit">Edit</button></a>
+                        <a href="/delete/<%= file%>"><button class="delete">Delete</button></a>
+                    </div>
+                </div>
+
+       <% }) %>
+    </div>
+
+    <% }else{ %>
+
+        <!-- If No Notes -->
+        <p class="no-notes">No Notes Yet!</p>
+
+    <% } %> 
+<script src="/js/script.js" defer></script>
+</body>
+</html>
