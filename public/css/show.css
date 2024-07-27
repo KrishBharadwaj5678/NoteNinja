@@ -22,13 +22,24 @@ p.filedata{
     }
     
     p.filename{
-        font-size: 4.7vw;
+        font-size: 5.2vw;
         margin: 2.3vw 0vw 2vw 0vw;
+    }
+    
+    p.filedata{
+        font-size: 4.2vw;
+        line-height: 6.9vw;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1200px) {
+
+    p.filename{
+        font-size: 4.7vw;
     }
     
     p.filedata{
         font-size: 3.4vw;
         line-height: 5.4vw;
     }
-
 }
