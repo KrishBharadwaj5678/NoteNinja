@@ -155,14 +155,14 @@ p.no-notes{
     }
     
     div.inner-form{
-        gap: 3vw;
+        gap: 4.8vw;
     }
     
     input.title,textarea.description{
-        height: 8vw;
+        height: 9vw;
         border-radius: 0.4vw;
         padding: 0vw 1.7vw 0vw 2vw;
-        font-size: 3.3vw;
+        font-size: 3.9vw;
     }
     
     textarea.description{
@@ -172,43 +172,43 @@ p.no-notes{
     }
      
     input.submit{
-        width: 19vw;
-        height: 6.5vw;
+        width: 21vw;
+        height: 8.6vw;
         border-radius: 0.4vw;
-        font-size: 2.9vw;
+        font-size: 3.8vw;
     }
 
     div.notes-part{
         margin: 5vw 0vw 0vw 0vw;
-        gap: 2.3vw;
+        gap: 5vw;
     }
 
     div.box{
-        width: 25vw;
-        padding: 1.8vw;
+        width: 35vw;
+        padding: 2vw;
         border-radius: 0.4vw;
     }
 
     h3.box-title{
-        font-size: 3.2vw;
+        font-size: 4vw;
     }
     
     p{
-        margin: 1.2vw 0vw;
+        margin: 1.9vw 0vw;
     }
 
     a.read-more{
-        font-size: 3.3vw;
+        font-size: 3.9vw;
     }
 
     div.btns{
-        gap: 2vw;
+        gap: 3vw;
     }
 
     button.edit,button.delete{
-        width: 9.3vw;
-        height: 5.7vw;
-        font-size: 2.4vw;
+        width: 14vw;
+        height: 8vw;
+        font-size: 3.7vw;
         border-radius: 0.4vw;
     }
 
@@ -216,22 +216,4 @@ p.no-notes{
         font-size: 4.8vw;
         margin: 4vw 0vw;
     }
-}
-
-@media only screen and (min-width:600px) and (max-width:1200px){
-    input.title,textarea.description{
-        font-size: 3.6vw;
-    }
-
-    p{
-        margin: 1.6vw 0vw;
-    }
-
-    input.submit{
-        width: 20vw;
-        height: 7.4vw;
-        border-radius: 0.6vw;
-        font-size: 3.3vw;
-    }
-
 }
